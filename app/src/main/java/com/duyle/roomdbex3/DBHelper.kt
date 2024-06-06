@@ -12,7 +12,6 @@ import androidx.room.Update
 abstract class StudentDB : RoomDatabase() {
     abstract fun studentDAO(): StudentDAO
 }
-
 @Dao
 interface StudentDAO {
     @Query("SELECT * FROM Student")
